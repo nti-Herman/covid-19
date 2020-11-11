@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url("../images/corona-webb.jpg");
+    background-size: cover;
+}
+
+#container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr 2fr 1fr;
+    grid-template-rows: 2fr 3fr 3fr 1fr;
+    grid-template-areas: 
+    '. hd1 hd2 .'
+    '. ar1 as .'
+    '. ar2 as .'
+    '. fo fo .';
+}
+
+#header1 {
+    grid-area: hd1;
+    background: white;
+    border: lightgray;
+    border-right: white;
+    border-style: solid;
+    border-width: 1px;
+    display:flex;
+    align-items: flex-end;
+}
+
+#header2 {
+    grid-area: hd2;
+    background: white;
+    border: lightgray;
+    border-left: white;
+    border-style: solid;
+    border-width: 1px;
+    display:flex;
+    align-items: flex-end;
+}
+
+#article1 {
+    grid-area: ar1;
+    background: white;
+    border: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#article2 {
+    grid-area: ar2;
+    background: white;
+    border: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+aside {
+    grid-area: as;
+    background: white;
+    border: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+footer {
+    grid-area: fo;
+    background: white;
+    border: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    background: rgb(71, 27, 27);
+}
+
+h1 {
+    font-size: 420%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: min-content;
+    background-color: rgb(231, 96, 96);
+}
+
+#rollDice {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100%;
+    height: 50%;
+    margin-top: 25%;
+    margin-right: 10%;
+    background-color: rgb(231, 96, 96);color: lightpink;
+    border-radius: 15%;
+
+}
+#whyrolldice {
+    font-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 25%;
+}
+
+#days {
+    font-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 25%;
+    color: rgb(231, 96, 96);
+}
+
+#diceImage {
+    width: 100%;
+}
+
+#corona {
+    width:40%;
+    margin-left: 60%;
+}
+
+li { 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+a {
+    color: rgb(231, 96, 96);
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    background-color: rgb(231, 96, 96);
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    background-color: rgb(231, 96, 96);
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
